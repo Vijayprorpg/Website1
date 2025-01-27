@@ -1,0 +1,231 @@
+body {
+    background-color: #000000;
+    font-family: segoe UI, sans-serif;
+    color: #fcfcfc;
+    /* border: 2px solid rgb(237, 14, 14); */
+    display: flow-root;
+}
+
+#PVPGaming {
+    color: rgb(2252 114 0);
+    text-align: center;
+    font-family: Minecraft, segoe UI, sans-serif;
+    font-weight: bolder;
+    text-shadow: 0px 0px 15px yellow;
+}
+
+h3 {
+    text-align: center;
+    font-family: Minecraft, segoe UI, sans-serif;
+    display: flex;
+    color: #2dcd2dd6;
+    text-shadow: 0px 0px 11px #0ede50;
+}
+
+.video {
+    align-content: center;
+    /* display: flex; */
+    justify-content: right;
+    float: right;
+
+
+}
+
+.Logo {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+   
+
+
+}
+
+@keyframes Logoanimation {
+    from {}
+
+    to {
+        transform: translatex(3px);
+        box-shadow: 0px 0px 20px hsla(139, 84%, 25%, 0.508);
+    }
+
+}
+
+
+.sticky {
+    /* background-color: #000000; */
+    position: sticky;
+    top: 0px
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    float: right;
+    position: sticky;
+    z-index: 1;
+}
+
+* {
+    margin: 0;
+    padding: o;
+}
+
+.hello {
+    animation: Logoanimation 1ms ease-in-out 0s infinite alternate-reverse;
+    box-shadow: #0ede50;
+    z-index: 100;
+    position: relative;
+}
+
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.image-wrapper img {
+    display: block;
+    width: auto;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.1);
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #0cddc1d0;
+    font-weight: bolder;
+    font-family: "Baloo Bhai 2", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.image-wrapper:hover .image-overlay {
+    opacity: 1;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap');
+
+.lorem {
+    font-family: "Baloo Bhai 2", serif;
+    color: #08f3fb;
+    filter: drop-shadow(0px 0px 5px #08f3fb);
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    padding-top: 103px;
+}
+
+
+
+.hover-image-wrapper {
+    position: relative;
+    display: flexbox;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    float: left;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.hover-image-wrapper img {
+    display: flex;
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    /* justify-content: center; */
+    /* background-position: center center; */
+    width:23vw;
+    height: auto;
+}
+
+.hover-image-wrapper:hover img {
+    transform: scale(1.1);
+}
+
+.hover-image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    /* Transparent effect */
+    color: black;
+    /* Black text for contrast */
+    text-align: center;
+    padding: 10px 0;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.5s ease;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.hover-image-wrapper:hover .hover-image-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.images {
+    clear: both;
+    height: 605vh;
+    border: 2px solid #03f603;
+    width: auto;
+    overflow: auto;
+}
+
+.main {
+    background-image: url(background.png);
+    height: 100vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+}
+
+.bix {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.74;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+.material {
+    position: relative;
+    z-index: 10;
+
+}
+
+iframe {
+    width: 40vw;
+    height: 50vh;
+}
